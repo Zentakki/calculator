@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgb(214, 211, 207);
+}
+
+input {
+    font-size: large;
+    font-weight: bold;
+    text-align: right;
+    width: 220px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(238, 224, 206);
+}
+
+button {
+    padding: 5px;
+    font-weight: 600;
+    font-size: large;
+    width: 50px;
+    height: 50px;
+    vertical-align: bottom;
+    border-radius: 5px;
+}
+
+.zero-btn {
+    width: 105px;
+}
+
+.empty {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.top-row-btn {
+    background-color: rgb(188, 192, 196);
+}
+
+.divide-btn,
+.multiply-btn,
+.subtract-btn,
+.sum-btn,
+.equal-btn {
+    background-color: rgb(238, 183, 82);
+}
+
+.container {
+    background-color: rgb(125, 131, 125);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    gap: 2px;
+}
+
