@@ -69,3 +69,7 @@ button {
     gap: 2px;
 }
 
+.selected {
+    background-color: rgb(182, 163, 128);;
+}
+
