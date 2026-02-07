@@ -136,7 +136,7 @@ container.addEventListener('click', (event) => {
             history.push(number2);
             number2 = number2.split("").includes("-") ? String(Math.abs(Number(number2))) : `-${number2}`;
             display.value = number2;
-        } else if (inputStr in operators && number2 === "0") {
+        } else if (inputStr in operators && number2 === "0" && inputStr !== "🟰") {
             buttons.forEach(button => button.classList.remove("selected"))
             operator = operators[inputStr];
             event.target.classList.add("selected");
@@ -153,6 +153,11 @@ container.addEventListener('click', (event) => {
                 Number(number1),
                 Number(number2)
             );
+            if (result === Infinity) {
+                clear();
+                display.value = Infinity;
+                return;
+            };
             display.value = result;
             // allows to chain operations
             number1 = String(result);
@@ -166,6 +171,11 @@ container.addEventListener('click', (event) => {
                 Number(number1),
                 Number(number2)
             );
+            if (result === Infinity) {
+                clear();
+                display.value = Infinity;
+                return;
+            };
             display.value = result;
             // allows to chain operations
             number1 = String(result);
